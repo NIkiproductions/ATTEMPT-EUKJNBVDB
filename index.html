@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valentine World</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Nunito:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <main class="page">
+    <section class="screen screen--active" id="screen-start">
+      <div class="card">
+        <p class="eyebrow">A tiny question, a big feeling</p>
+        <h1>Be my Valentine?</h1>
+        <div class="button-row">
+          <button class="btn btn-yes" id="yes-button">Yes</button>
+          <button class="btn btn-no" id="no-button">No</button>
+        </div>
+        <p class="helper">(The "No" button is a little shy...)</p>
+      </div>
+    </section>
+
+    <section class="screen" id="screen-yes">
+      <div class="card">
+        <div class="confetti" aria-hidden="true">
+          <span>💖</span><span>💘</span><span>💝</span><span>✨</span><span>💖</span>
+        </div>
+        <h2>I knew you'd choose yes eventually 😌</h2>
+        <p class="subtext">Ready to explore our tiny universe?</p>
+        <button class="btn btn-yes" id="enter-button">Enter town</button>
+      </div>
+    </section>
+
+    <section class="screen" id="screen-town">
+      <div class="town-header">
+        <div>
+          <h2>Valentine Town</h2>
+          <p>Use the arrows to explore each cozy spot.</p>
+        </div>
+        <div class="town-badge">Chosen &amp; adored 💞</div>
+      </div>
+
+      <div class="carousel">
+        <button class="carousel__control" id="prev" aria-label="Previous">
+          ◀
+        </button>
+        <div class="carousel__track" id="carousel-track">
+          <article class="carousel__item">
+            <div class="emoji">📮</div>
+            <h3>Post Office</h3>
+            <p class="hint">Drop love notes, letters, and future plans here.</p>
+            <textarea placeholder="Write a note for him..."></textarea>
+          </article>
+
+          <article class="carousel__item">
+            <div class="emoji">📓</div>
+            <h3>Journal</h3>
+            <p class="hint">A shared memory lane for cute moments.</p>
+            <textarea placeholder="Add a sweet memory..."></textarea>
+          </article>
+
+          <article class="carousel__item">
+            <div class="emoji">🌷</div>
+            <h3>Mood Garden</h3>
+            <p class="hint">Plant encouragements and daily affirmations.</p>
+            <textarea placeholder="Write an encouragement..."></textarea>
+          </article>
+
+          <article class="carousel__item">
+            <div class="emoji">⛲️</div>
+            <h3>Fountain</h3>
+            <p class="hint">Make a wish or add a playful dare.</p>
+            <textarea placeholder="Wish, promise, or dare..."></textarea>
+          </article>
+        </div>
+        <button class="carousel__control" id="next" aria-label="Next">
+          ▶
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
